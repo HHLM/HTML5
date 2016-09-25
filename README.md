@@ -222,9 +222,9 @@ span{
 
 ### 选择器
 
-####类选择器.name 可以用好多次
-####ID选择器 #name{} 只能使用一次
-####伪类选择器
+####1、类选择器.name 可以用好多次
+####2、ID选择器 #name{} 只能使用一次
+####3、伪类选择器
 ```
 在原有的选择器基础上添加一个限定条件，当某种情况下发生时候再选择这个标签
 
@@ -236,12 +236,12 @@ a:hover {
 first-child :缩小标签的选择范围
 
 ```
-####子选择器 .name>li 
+####4、子选择器 .name>li 
 ```
 .first>span{color:red;}
 >作用于元素后的第一代 
 ```
-####包含（后代）选择器  
+####5、包含（后代）选择器  
 
 ```
 即加入空格,用于选择指定标签元素下的后辈元素。如右侧代码编辑器中的代码：
@@ -251,18 +251,52 @@ first-child :缩小标签的选择范围
 
  <p class="first">三年级时，我还是一个<span>胆小如鼠</span>的小女孩，上课从来不敢回答老师提出的问题，生怕回答错了老师会批评我。就一直没有这个勇气来回答老师提出的问题。学校举办的活动我也没勇气参加。</p>
 ```
-####通用选择器
+####6、通用选择器
 
 	```
 	* {color:red;}
 	作用于html所有标签元素
 	```
-####分组选择器
+####7、分组选择器
 
 ```
 h1,span{color:red;}
 相当于
 h1{color:red;}
 span{color:red;}
+```
+
+###字体样式
+```
+line-height:1.5em; //行间距是文字的1.5倍
+text-indent:2em;   //文字缩进文字的两倍
+text-decoration:line-through; //给文字添加中间的横线
+text-decoration:underline; 	//给文字添加下划线
+font-style:italic;				//文字风格 斜体 normal 正常 
+font-weight:normal;				//文字 normal 正常 bold 粗体
+font-family:"Microsoft Yahei"; //文字的字体 
+letter-spacing:10px;			//字母间的间距
+word-spacing:40px					//文字之间的距离
+text-align:center;				//文字位置 center 居中 right 右 left 左
+```
+###元素分类
+html标签元素大体被分为三种不同的类型：块状元素、内联元素(又叫行内元素)和内联块状元素。
+
+#### 块状元素
+```
+常用的块状元素有：
+<div>、<p>、<h1>...<h6>、<ol>、<ul>、<dl>、<table>、<address>、<blockquote> 、<form>
+```
+####内联元素
+
+```
+常用的内联元素有：
+<a>、<span>、<br>、<i>、<em>、<strong>、<label>、<q>、<var>、<cite>、<code>
+```
+####内联块状元素
+
+```
+常用的内联块状元素：
+<img>、<input>
 ```
 
