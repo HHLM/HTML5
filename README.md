@@ -123,16 +123,146 @@ table、tbody、tr、th、td
 </form>
 
 <br />
+
 ```
 1.<form> ：所有表单控件（文本框、文本域、按钮、单选框、复选框等）都必须放在<form></form>标签之间（否则用户输入的信息可提交不到服务器上哦！）。
 2.action ：浏览者输入的数据被传送到的地方,比如一个PHP页面(save.php)。
 3.method ： 数据传送的方式（get/post）
 ```
+
 ```
 1、<textarea>标签是成对出现的，以<textarea>开始，以</textarea>结束。
 2、cols ：多行输入域的列数。
 3、rows ：多行输入域的行数。
 4、在<textarea></textarea>标签之间可以输入默认值。
+```
 
+### 13、 `input 标签`
+
+<input type="submit" value="确定"  name="submit" /> 
+<input type="reset" value="重置"  name="reset" />
+<input type = "text" name= "宁城名称" value = "用户名用户" >
+<input type = "password" name = "ddd" value = "sssss">
+<label for = "mingzi">用户名</label>
+<label>男</label>
+<input type="radio" value="1"  name="radioLove" checked = "checked" />
+<label>女</label>
+<input type="radio" value="2"  name="radioLove" />
+<input type = "checkbox" vlaue = "s" name = "sss">
+
+```
+1、type:
+
+   当 type="radio" 时，控件为单选框 两个名字要一样 否者不能单选
+
+   当 type="checkbox" 时，控件为复选框
+   
+   当 type="submit"时 确定按钮
+   
+   当 type="reset" 时，重置按钮
+
+   当 type="text" 时，输入框 明文
+   
+   当 type="password"时 输入框 密码
+
+2、value：提交数据到服务器的值（后台程序PHP使用）
+
+3、name：为控件命名，以备后台程序 ASP、PHP 使用
+
+4、checked：当设置 checked="checked" 时，该选项被默认选中
+
+```
+### 14、`select 标签`
+<form action="save.php" method="post" >
+    <label>爱好:</label>
+    <select>
+      <option value="看书" >看书</option>
+      <option value="旅游" selected = "selected">旅游</option>
+      <option value="运动">运动</option>
+      <option value="购物">购物</option>
+    </select>
+</form>
+
+<form action="save.php" method="post" >
+    <label>爱好:</label>
+    <select multiple = "multiple">
+      <option value="看书">看书</option>
+      <option value="旅游">旅游</option>
+      <option value="运动">运动</option>
+      <option value="购物">购物</option>
+    </select>
+</form>
+
+```
+<select multiple = "multiple"> 加上这个可以多选
+```
+## CSS样式
+
+主要包括三种方式：内联式、嵌入式、外部式
+
+```
+优先级：内联式 > 嵌入式 > 外部式
+嵌入式 > 外部式的条件是 <style type="text/css"></style> 放在 <link href="style.css" rel="stylesheet" type="text/css"> 前面
+```
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>嵌入式css样式</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+span{
+   color:red;
+}
+</style>
+</head>
+<body>
+    <p>1937年，<span style="color:green">七七卢沟桥事变</span>、抗日战争正式爆发</p>
+</body>
+</html>
+
+### 选择器
+
+####类选择器.name 可以用好多次
+####ID选择器 #name{} 只能使用一次
+####伪类选择器
+```
+在原有的选择器基础上添加一个限定条件，当某种情况下发生时候再选择这个标签
+
+a {
+}
+a:hover {
+
+}
+first-child :缩小标签的选择范围
+
+```
+####子选择器 .name>li 
+```
+.first>span{color:red;}
+>作用于元素后的第一代 
+```
+####包含（后代）选择器  
+
+```
+即加入空格,用于选择指定标签元素下的后辈元素。如右侧代码编辑器中的代码：
+.first  span{color:red;}
+
+空格作用于元素的所有后代
+
+ <p class="first">三年级时，我还是一个<span>胆小如鼠</span>的小女孩，上课从来不敢回答老师提出的问题，生怕回答错了老师会批评我。就一直没有这个勇气来回答老师提出的问题。学校举办的活动我也没勇气参加。</p>
+```
+####通用选择器
+
+	```
+	* {color:red;}
+	作用于html所有标签元素
+	```
+####分组选择器
+
+```
+h1,span{color:red;}
+相当于
+h1{color:red;}
+span{color:red;}
 ```
 
