@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HHLM的第一个HTML</title>
+    <style type="text/css">
+        html,body,h1,h2,h3,ol,ul,li,a {
+
+            padding: 0px;
+            margin: 0px;
+            border: 0px;
+        }
+        h1 {
+
+            margin: 10px 0;
+        }
+        h2 {
+
+            margin: 15px 0;
+        }
+        h3 {
+
+            margin: 15px 0;
+            border-bottom: 1px solid #cccccc;
+            padding-bottom: 3px;
+        }
+        .nav{
+
+            padding: 0 0 0 0px;
+            display: block;
+            text-align: center;
+
+        }
+        .nav li{
+            display: inline;
+            font-size: 150%;
+
+        }
+        a {
+            text-decoration: none;
+            color: #00b2f5;
+        }
+        /*未访问的链接 和a{}相同并且同事存在时候会覆盖a{}*/
+        a:link {
+
+
+        }
+        /*鼠标移动到超链接上*/
+        a:hover {
+
+            text-decoration: underline;
+            color: red;
+        }
+        /*被选定的超链接*/
+        a:active {
+
+            text-decoration: underline;
+            color: green;
+        }
+        /*已经访问的超链接*/
+        a:visited {
+
+            color: lightblue;
+        }
+
+        .header {
+
+            padding: 30px;
+            background-color: brown;
+
+        }
+        .header h1 {
+
+            font-size: 300%;
+            color: green;
+            text-align: center;
+        }
+        .main-content {
+
+            padding: 30px;
+        }
+        .aaa {
+            padding: 20px;
+            border: 1px solid red;
+        }
+
+        .aaa li {
+
+            display: block;
+            padding: 10px;
+        }
+        .bbb {
+
+            padding: 30px;
+            border: 1px solid red;
+            margin-top: 40px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="header">
+    <h1>主页</h1>
+
+    <ul class="nav">
+        <li><a href="life.html">生活</a></li>
+        <!-- 属性的值 href  target 在什么地方打开 ——blank 在新标签中打开  ——self在当前页页面打开-->
+        <li><a href="work.html">工作</a></li>
+        <li><a href="Study.html">学习</a></li>
+    </ul>
+</div>
+<div class="main-content">
+    <h2>自由自在多快活</h2>
+    <p><a href="http://edu.51cto.com/lesson/id-55912.html" target="_blank">HTML5学习</a>起来还挺有意思的哈哈呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵</p>
+
+    <p><a href="other/legal.html" target="_blank">免责声明</a></p>
+    <ul class="aaa">
+        <li>多看</li>
+        <li>多学</li>
+        <li>多写</li>
+        <li>多分享</li>
+        <li>多请教</li>
+        <li>坚持</li>
+        <li>勤奋</li>
+        <li>时刻准备着</li>
+        <li>每天进步一点</li>
+        <li>有学习就有收获</li>
+        <li>时间久了就成功了</li>
+    </ul>
+
+    <ol class="bbb">
+        <li>嘿嘿嘿</li>
+        <li>哈哈哈</li>
+        <li>呼呼呼</li>
+        <li>哼哼哼</li>
+    </ol>
+    <h3>学习计划</h3>
+    <p>兴趣是学习的前提，一定要坚持下去哦，学好html5自己做个静态网页，加油哦！你一定可以的！！！！！</p>
+    <p>有什么<a href="other/suggest.html">意见和建议</a>可以提交给我们</p>
+</div>
+
+</body>
+</html>

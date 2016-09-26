@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML练习</title>
+</head>
+<style type="text/css">
+    html,body,ul,li,ol,p,a{
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    #main{
+        background-color: #00b2f5;
+        margin-left: 10%;
+        margin-right: 10%;
+        /*width: 100px;*/
+        /*height: 100px;*/
+        border: 1px solid red;
+        position: relative;
+        padding: 0px;
+        /*top: 100px;*/
+    }
+    #main>h1{
+        text-align: center;
+        color: red;
+    }
+    #main-1{
+        position: absolute;/*位置*/
+        bottom: 0px;
+        /*left: auto;*/
+        /*right: auto;*/
+        width: 100%;
+        text-align: center;
+        /*border: 1px solid green;*/
+
+    }
+    .name{
+        /*display: block;*/
+        padding: 20px;
+        background: green;
+        text-align: center;
+    }
+    .name li
+    {
+        display: inline;
+        padding: 10px;
+    }
+    .middle{
+        /*padding: 30px;*/
+        padding: 0;
+        border: 1px solid green;
+        width: 90%;
+        margin: 10px auto;
+        background-color: blue;
+        /*height: 200px;*/
+        position: relative;
+    }
+    .name li a{
+        text-decoration: none;
+    }
+    .name li a:hover{
+        color:red;
+    }
+    .middle h2{
+        color: green;
+        text-align: center;
+    }
+    .middle{
+        text-align: center;
+    }
+    .middle li{
+        display: inline-block;
+        text-align: center;
+        padding: 10px;;;
+
+    }
+
+</style>
+<body>
+    <div id="main">
+        <h1>HHLM</h1>
+        <ul class="name">
+            <li><a href="">主页</a></li>
+            <li><a href="Study.html">学习</a></li>
+            <li><a href="work.html">工作</a></li>
+        </ul>
+        <div id="main-1">
+            Hello World!
+        </div>
+    </div>
+    <div class="middle">
+        <h2>HHLM</h2>
+        <ui>
+            <li>HHH</li>
+            <li>KKK</li>
+            <li>LLL</li>
+            <li>HHH</li>
+        </ui>
+    </div>
+</body>
+</html>
